@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>企业文件管理系统-文档管理面板</title>
+</head>
+<body align="center">
+    <div style="margin-top:60px">
+        <h1>企业文件管理系统-文档管理面板</h1>
+        <h1>Welcome {{pid}} !</h1>
+
+        <form action="/controlpane2up" method="get">
+            <div class="container">
+                <label><b>PATH-UP</b></label>
+                <input type="text" placeholder="需上传本地文件路径" name="path" required>
+
+                <label><b>FILEID</b></label>
+                <input type="text" placeholder="文件ID" name="fid" required>
+
+                <label><b>FILENAME</b></label>
+                <input type="text" placeholder="文件名称" name="fname" required>
+
+                <label><b>PARTITION</b></label>
+                <input type="text" placeholder="存储文件的分片" name="partition" required>
+
+                <button type="submit">上传</button>
+            </div>
+        </form>
+
+        <form action="/controlpane2down" method="get">
+            <div class="container">
+                <label><b>PATH-DOWN</b></label>
+                <input type="text" placeholder="下载文件到本地路径" name="path_out" required>
+
+                <label><b>FILEID</b></label>
+                <input type="text" placeholder="文件ID" name="fid" required>
+
+                <button type="submit">下载</button>
+            </div>
+        </form>
+
+        <form action="/controlpane2look" method="get">
+            <div class="container">
+                <button type="submit" name="look">查看系统中所有文档信息</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

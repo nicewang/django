@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>企业文件管理系统-添加用户（管理员）</title>
+</head>
+<body align="center">
+    <div style="margin-top:60px">
+        <form action="/adduser" method="get">
+            <h1>企业文件管理系统-添加用户（管理员）</h1>
+
+            <div class="container">
+                <label><b>PID</b></label>
+                <input type="text" placeholder="输入员工ID" name="pid" required>
+
+                <label><b>PNAME</b></label>
+                <input type="text" placeholder="输入员工姓名" name="pname" required>
+
+                <label><b>Username</b></label>
+                <input type="text" placeholder="输入员工权限" name="prank" required>
+
+                <button type="submit">添加</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

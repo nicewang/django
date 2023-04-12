@@ -1,0 +1,33 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+    <!--<meta charset="UTF-8">-->
+    <!--<title>Title</title>-->
+<!--</head>-->
+<!--<body>-->
+
+<!--</body>-->
+<!--</html>-->
+
+<!--<h1>{{ hello }}</h1>-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>nice的Django实验室</title>
+</head>
+<body>
+    <h1>Hello World!</h1>
+    <p>Nice Django Try</p>
+    {% block mainbody %}
+       <p>original</p>
+    {% endblock %}
+    <form action="/change2log" method="get">
+        <button type="submit" name="login">登录</button>
+    </form>
+    <form action="/change2adduser" method="get">
+        <button type="submit" name="adduser">添加用户（管理员）</button>
+    </form>
+</body>
+</html>
